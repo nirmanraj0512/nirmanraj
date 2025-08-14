@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import "tailwindcss";
+@theme {
+  --color-brown: #53423e;
+  --color-lightBrown: #645550;
+  --color-darkBrown: #2c2523;
+  --color-black: #1e1917;
+  --color-white: #f1e1d9;
+  --color-cyan: #15d1e9;
+  --color-lightCyan: #88e5f0;
+  --color-darkCyan: #009fb3;
+  --color-orange: #fb9718;
+  --color-lightOrange: #fac27b;
+  --color-darkOrange: #d28422;
+  --color-grey: #626965;
+  --color-lightGrey: #978580;
+  --color-darkGrey: #3f4441;
+  --font-body: "Josefin Sans", "sans-serif"; 
+  --font-special: "Nunito", "sans-serif"; 
+}
+
+body{
+  @apply bg-darkBrown
+}
+.hover-cyan-shadow:hover {
+  box-shadow: 0px 0px 20px 0px rgba(94, 206, 220, 0.5);
+  transition: all 0.5s ease;
+}
+.cyan-medium-shadow {
+  box-shadow: 10px 10px 200px 150px rgba(94, 206, 220, 0.5);
+}
+.orange-medium-shadow{
+  box-shadow: 10px 10px 200px 150px rgba(240,169,79,0.5);
+}
+
+.text-cyan {
+  color: var(--color-cyan);
+}
+.hover\:text-cyan:hover {
+  color: var(--color-cyan);
+}
+/* Small: ≥ 350px */
+@media (min-width: 350px) {
+  .sm\:text-lg {
+    font-size: 1.125rem;
+  }
+}
+
+/* Medium: ≥ 768px */
+@media (min-width: 768px) {
+  .md\:text-xl {
+    font-size: 1.25rem;
+  }
+}
+
+/* Large: ≥ 1024px */
+@media (min-width: 1024px) {
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra Large: ≥ 1280px */
+@media (min-width: 1280px) {
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+  }
+}
+
+/* 2XL: ≥ 1536px */
+@media (min-width: 1536px) {
+  .\32xl\:text-4xl {
+    font-size: 2.25rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00f2ff, #ff6c00);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #ff6c00, #00f2ff);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00f2ff #1c1c1c;
+}
