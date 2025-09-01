@@ -3,7 +3,7 @@ import { FiArrowDownRight } from "react-icons/fi";
 
 const NavbarBtns = () => {
   // The external link for the button
-  const resumeLink = "https://drive.google.com/file/d/1Lx336XnLk8hzS4-lJgHHrkt7P3QzATY-/view?usp=drive_link";
+  const resumeLink = "https://drive.google.com/file/d/1-fEI1xZGjsd0uskwNorWQIGVnK9yDO6Q/view?usp=drive_link";
 
   return (
     <a 
