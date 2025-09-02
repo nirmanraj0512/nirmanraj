@@ -10,10 +10,7 @@ const FooterMain = () => {
       name: "Skills",
       section: "skills",
     },
-    {
-      name: "Experience",
-      section: "experience",
-    },
+
     {
       name: "Projects",
       section: "projects",
@@ -28,7 +25,7 @@ const FooterMain = () => {
           {footerLinks.map((item, index) => {
             return (
               <li key={index}>
-                <a href="#">{item.name}</a>
+                <a href={`#${item.section}`}>{item.name}</a>
               </li>
             );
           })}
